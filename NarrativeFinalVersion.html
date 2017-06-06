@@ -11,7 +11,14 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="NarrativeFinal" startnode="58" creator="Twine" creator-version="2.1.3" ifid="5D2CFCDB-AEB4-4E4D-91BD-7C83C7BE2B97" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="NarrativeFinal" startnode="58" creator="Twine" creator-version="2.1.3" ifid="5D2CFCDB-AEB4-4E4D-91BD-7C83C7BE2B97" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="desert"] {
+	background-color: Beige;
+}
+
+tw-story[tags~="jungle"] {
+	background-image: url("https://static.pexels.com/photos/88819/pexels-photo-88819.jpeg");
+}
+
 
 
 
@@ -22,6 +29,7 @@
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -227,7 +235,7 @@ You reach a heavy metal security door. Its got a lock with a T9 keyboard attache
 (if: $bodyArmor is true)[Luckily, the body armor you picked up blocked the bullets. You continue down the hall knowing that whoever set that trap probably didn&#x27;t feel the need to set more. You reach the [[computer room-&gt;computerRoom]].]
 (if: $bodyArmor is false)[(text-style: &quot;blur&quot;)[You fall to your back and lie lifeless on the ground.] [[Try Again-&gt;BunkerEntrance]]]</tw-passagedata><tw-passagedata pid="38" name="ClimbVent" tags="" position="2914,1475">You slide into the vent shaft and your arm slips into the mysterious ooze.
 (if: $hazmat is true)[You scream in fear of what the liquid will do to you, until you realize the hazmat suit protected you. You continue to climb through the vent until you land in the [[computer room-&gt;computerRoom]]]
-(if: $hazmat is false)[Your arm suddenly feels like its on fire. You look down and see it explode with blisters. The pain immobilizes you and you eventually bleed out.[[try again-&gt;BunkerEntrance]]]</tw-passagedata><tw-passagedata pid="39" name="ToJungle" tags="" position="2261.3333333333335,1114.6666666666667">{
+(if: $hazmat is false)[Your arm suddenly feels like its on fire. You look down and see it explode with blisters. The pain immobilizes you and you eventually bleed out.[[try again-&gt;BunkerEntrance]]]</tw-passagedata><tw-passagedata pid="39" name="ToJungle" tags="jungle" position="2261,1114">{
 (set: $elapsedTime to 0)
 (set: $textAppeared to false)
 
@@ -250,10 +258,10 @@ Everything is quiet...
 ]
                 
 				
-				&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="40" name="Smoke" tags="" position="2397,1103">You make it to the smoke.
+				&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="40" name="Smoke" tags="jungle" position="2397,1103">You make it to the smoke.
 The source of the smoke seems to be from the middle section of the plane&#x27;s hull.
 
-[[monster behind&lt;-Investigate the area]].</tw-passagedata><tw-passagedata pid="41" name="monster behind" tags="" position="2524,1106">Snap!
+[[monster behind&lt;-Investigate the area]].</tw-passagedata><tw-passagedata pid="41" name="monster behind" tags="jungle" position="2524,1106">Snap!
 
                 Wait... You didn&#x27;t make that sound. \
 
