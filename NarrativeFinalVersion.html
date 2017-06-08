@@ -50,6 +50,7 @@ tw-story[tags~="sky"] {
 body {
   text-align: center;
 }
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
@@ -61,7 +62,8 @@ body {
 
 
 
-</script><tw-passagedata pid="1" name="Beginning" tags="" position="1911,303">You awaken with a jolt.
+
+</script><tw-passagedata pid="1" name="Beginning" tags="" position="331,351">You awaken with a jolt.
 
 (text-style: &quot;rumble&quot;)[The plane is plummeting!]
 
@@ -77,7 +79,7 @@ A boat sways in the distance.
 
 The [[Cockpit]] is in front of you.
 
-(set: $foundInstructions to false)</tw-passagedata><tw-passagedata pid="2" name="Cockpit" tags="" position="1983,490">The pilot is missing!
+(set: $foundInstructions to false)</tw-passagedata><tw-passagedata pid="2" name="Cockpit" tags="" position="403,538">The pilot is missing!
 
 There&#x27;s a [note]&lt;checkNote| on the dashboard.
 {
@@ -96,21 +98,21 @@ The plane&#x27;s coordinates are:
 }
 
 You need to get off this plane.
-You need to [[look-&gt;Look]] for a parachute!</tw-passagedata><tw-passagedata pid="3" name="Look" tags="" position="2137,490">You realize the plane is losing altitude at an alarming pace and you (text-style: &quot;expand&quot;)[&#x27;&#x27;need&#x27;&#x27;] to find that parachute before it gets too close to the water.
+You need to [[look-&gt;Look]] for a parachute!</tw-passagedata><tw-passagedata pid="3" name="Look" tags="" position="557,538">You realize the plane is losing altitude at an alarming pace and you (text-style: &quot;expand&quot;)[&#x27;&#x27;need&#x27;&#x27;] to find that parachute before it gets too close to the water.
 
 There are a few likely places the parachute could be, you can check 
 [[Seats&lt;-under the seats]], 
 [[in the cabinets-&gt;Cabinets]], or 
-[[in the overhead compartments.-&gt;Compartments]]</tw-passagedata><tw-passagedata pid="4" name="Seats" tags="" position="2145,365">You look under the seats in the cockpit, only to find parachuteless, (text-style: &quot;expand&quot;)[empty spaces.]
+[[in the overhead compartments.-&gt;Compartments]]</tw-passagedata><tw-passagedata pid="4" name="Seats" tags="" position="565,413">You look under the seats in the cockpit, only to find parachuteless, (text-style: &quot;expand&quot;)[empty spaces.]
 
-(link-goto: &quot;You stand back up and continue looking.&quot;,&quot;Look&quot;)</tw-passagedata><tw-passagedata pid="5" name="Cabinets" tags="" position="2268,362">You search the cabinets on the walls of the plane to find a piece of paper.
+(link-goto: &quot;You stand back up and continue looking.&quot;,&quot;Look&quot;)</tw-passagedata><tw-passagedata pid="5" name="Cabinets" tags="" position="688,410">You search the cabinets on the walls of the plane to find a piece of paper.
 
 It&#x27;s instructions on how to properly deploy a parachute! You skim the instructions and remind yourself on the correct parachute procedures.
 
 (text-style: &quot;italic&quot;)[(colour: blue)[Blue], (colour: green)[Green], (colour: yellow)[Yellow], (colour:red)[Red].]
 
 (link-goto: &quot;You still need to actually find that parachute though...&quot;,&quot;Look&quot;)
-(set: $foundInstructions to true)</tw-passagedata><tw-passagedata pid="6" name="Compartments" tags="" position="2270,496">You look up and [open]&lt;openCom| the compartment above your head.
+(set: $foundInstructions to true)</tw-passagedata><tw-passagedata pid="6" name="Compartments" tags="" position="690,544">You look up and [open]&lt;openCom| the compartment above your head.
 {
 (click: ?openCom)[
 There it is!
@@ -119,7 +121,7 @@ You grab the parachute out of the compartment and set it up on your back.
 
 Parachute equipped, you make your way to the [[door -&gt; Pre Jump]] of the plane.
 ]
-}</tw-passagedata><tw-passagedata pid="7" name="check the cabinet " tags="" position="2555,494">(if: $foundInstructions is true)[
+}</tw-passagedata><tw-passagedata pid="7" name="check the cabinet " tags="" position="975,542">(if: $foundInstructions is true)[
 You skim the instructions you found.
 (text-style: &quot;italic&quot;)[(colour: blue)[Blue], (colour: green)[Green], (colour: yellow)[Yellow], (colour:red)[Red].]
 ]
@@ -135,24 +137,24 @@ It&#x27;s instructions on how to properly deploy a parachute! You skim the instr
 [[Go back to the window. -&gt; Pre Jump]]
 
 
-</tw-passagedata><tw-passagedata pid="8" name="check the seet " tags="" position="2552,368">There is nothing here.
-[[Go back to the window. -&gt; Pre Jump]]</tw-passagedata><tw-passagedata pid="9" name="check the over head compartment " tags="" position="2555,622">There is nothing here.
+</tw-passagedata><tw-passagedata pid="8" name="check the seet " tags="" position="972,416">There is nothing here.
+[[Go back to the window. -&gt; Pre Jump]]</tw-passagedata><tw-passagedata pid="9" name="check the over head compartment " tags="" position="975,670">There is nothing here.
 
 [[Go back the window. -&gt; Pre Jump]]
-</tw-passagedata><tw-passagedata pid="10" name=" Pre Jump" tags="" position="2398,495">You look out the window. Are you ready to go?
+</tw-passagedata><tw-passagedata pid="10" name=" Pre Jump" tags="" position="818,543">You look out the window. Are you ready to go?
 [[check the cabinet &lt;- Check the cabinet.]]
 [[check the seet &lt;- Check the under the seats.]]
 [[check the over head compartment &lt;- Check the overhead compartments.]]
-[[Jump -&gt; Jump]]</tw-passagedata><tw-passagedata pid="11" name="Blue" tags="" position="2988,415">[[Green &lt;- Pull the Green cord.]]
+[[Jump -&gt; Jump]]</tw-passagedata><tw-passagedata pid="11" name="Blue" tags="" position="1408,463">[[Green &lt;- Pull the Green cord.]]
 [[Fall &lt;- Pull the Yellow cord.]]
-[[Fall &lt;- Pull the Red cord.]]</tw-passagedata><tw-passagedata pid="12" name="Fall " tags="" position="2772,306">You pulled the wrong cord and (text-style: &quot;blur&quot;)[fall to your death.]
+[[Fall &lt;- Pull the Red cord.]]</tw-passagedata><tw-passagedata pid="12" name="Fall " tags="" position="1192,354">You pulled the wrong cord and (text-style: &quot;blur&quot;)[fall to your death.]
 
-[[Beginning-&gt;Beginning]]</tw-passagedata><tw-passagedata pid="13" name="Yellow " tags="" position="3253,414">[[Parachute &lt;- Pull the Red cord.]]</tw-passagedata><tw-passagedata pid="14" name="Green " tags="" position="3129,413">[[Yellow &lt;- Pull the Yellow cord.]]
-[[Fall &lt;- Pull the Red cord.]]</tw-passagedata><tw-passagedata pid="15" name="Parachute " tags="" position="3377,414">The parachute comes out, catching the air and slowing you down.
+[[Beginning-&gt;Beginning]]</tw-passagedata><tw-passagedata pid="13" name="Yellow " tags="" position="1673,462">[[Parachute &lt;- Pull the Red cord.]]</tw-passagedata><tw-passagedata pid="14" name="Green " tags="" position="1549,461">[[Yellow &lt;- Pull the Yellow cord.]]
+[[Fall &lt;- Pull the Red cord.]]</tw-passagedata><tw-passagedata pid="15" name="Parachute " tags="" position="1797,462">The parachute comes out, catching the air and slowing you down.
 
 The plane explodes, scattering pieces of metal onto the island below you.
 
-You touch down on the sand and (link-goto: &quot;take off your parachute.&quot;,&quot;StartIsland&quot;)</tw-passagedata><tw-passagedata pid="16" name=" Jump" tags="" position="2711,498">You hop out the plane and \
+You touch down on the sand and (link-goto: &quot;take off your parachute.&quot;,&quot;StartIsland&quot;)</tw-passagedata><tw-passagedata pid="16" name=" Jump" tags="" position="1131,546">You hop out the plane and \
 \(if: $foundInstructions is false)[realize you fell asleep during parachute class.
 
 Guess you gotta pull random cords and hope you get the right one.]\
@@ -162,7 +164,7 @@ Guess you gotta pull random cords and hope you get the right one.]\
 [[Pull the Blue cord. -&gt;Blue]]
 [[Fall &lt;- Pull the Yellow cord.]]
 [[Fall &lt;- Pull the Green cord.]]
-[[Fall &lt;- Pull the Red cord.]]</tw-passagedata><tw-passagedata pid="17" name="StartIsland" tags="" position="1897,902">You look down the coast with the binoculars you have in your pocket and see the boat in the distance. You try [signaling]&lt;signal| it down by waving your hands above your head.
+[[Fall &lt;- Pull the Red cord.]]</tw-passagedata><tw-passagedata pid="17" name="StartIsland" tags="" position="317,950">You look down the coast with the binoculars you have in your pocket and see the boat in the distance. You try [signaling]&lt;signal| it down by waving your hands above your head.
 (click: ?signal)[
 But the sailors seem unresponsive to your gestures.
 ]
@@ -173,9 +175,9 @@ All you need to do is find the parts scattered on the island.
 [[Look around the island-&gt;IslandHub]]
 (set: $hasDish to false)
 (set: $hasRaspberryPi to false)
-(set: $battery to false)</tw-passagedata><tw-passagedata pid="18" name="ToSmokeStack" tags="cliff" position="2199,804">You decide to (link-goto: &quot;follow&quot;,&quot;ArriveCliff&quot;) the trail of smoke on the far side of the beach.
+(set: $battery to false)</tw-passagedata><tw-passagedata pid="18" name="ToSmokeStack" tags="cliff" position="619,852">You decide to (link-goto: &quot;follow&quot;,&quot;ArriveCliff&quot;) the trail of smoke on the far side of the beach.
 
-(text-style: &quot;smear&quot;)[You feel a pair of eyes watching you from the distance.]</tw-passagedata><tw-passagedata pid="19" name="IslandHub" tags="" position="2098,1103">Your goal: Find Radio Parts
+(text-style: &quot;smear&quot;)[You feel a pair of eyes watching you from the distance.]</tw-passagedata><tw-passagedata pid="19" name="IslandHub" tags="" position="518,1151">Your goal: Find Radio Parts
 
 (if: $hasDish is true)[You have a satellite dish.]
 (if: $hasRaspberryPi is true)[You have a raspberry pi kit.]
@@ -186,21 +188,21 @@ All you need to do is find the parts scattered on the island.
 (if: $battery is false)[To the east you see a bunker [[Go to the bunker-&gt;ToBunker]]]
 
 (if: $battery is true and $hasDish is true and $hasRaspberryPi is true)[You have everything you need to [[build]] a radio.]
-\</tw-passagedata><tw-passagedata pid="20" name="ArriveCliff" tags="cliff" position="2316,804">After about an hour of walking, you notice that the smoke trails out from some sort of building on top of a steep cliff.
+\</tw-passagedata><tw-passagedata pid="20" name="ArriveCliff" tags="cliff" position="736,852">After about an hour of walking, you notice that the smoke trails out from some sort of building on top of a steep cliff.
 
 You approach the cliff and look up; the building seems to be too high of a climb to safely reach.
 
-Hey, there&#x27;s (link-goto: &quot;something&quot;, &quot;CliffNoticePart&quot;) reflective halfway up the cliff!</tw-passagedata><tw-passagedata pid="21" name="CliffNoticePart" tags="cliff" position="2429,803">It&#x27;s a radio piece! 
+Hey, there&#x27;s (link-goto: &quot;something&quot;, &quot;CliffNoticePart&quot;) reflective halfway up the cliff!</tw-passagedata><tw-passagedata pid="21" name="CliffNoticePart" tags="cliff" position="849,851">It&#x27;s a radio piece! 
 
 The cliff terrain appears to be weaker in some areas leading up to the piece. Indents in the cliff appear on both your left and right sides further up the cliff.
 
 You check the closest rocks on both your left and right sides. The rock on your left side slightly shifts under your grasp. 
 
-(link-goto: &quot;Climb left &quot;,&quot;CliffWarning&quot;) or (link-goto: &quot; Climb right&quot;,&quot;CliffClimbing&quot;)</tw-passagedata><tw-passagedata pid="22" name="CliffClimbing" tags="cliff" position="2549,803">You grab the rock on your right hand side and begin [climbing]&lt;climbStart| towards the closest ledge.
+(link-goto: &quot;Climb left &quot;,&quot;CliffWarning&quot;) or (link-goto: &quot; Climb right&quot;,&quot;CliffClimbing&quot;)</tw-passagedata><tw-passagedata pid="22" name="CliffClimbing" tags="cliff" position="969,851">You grab the rock on your right hand side and begin [climbing]&lt;climbStart| towards the closest ledge.
 
 \(click: ?climbStart)[
 You rest yourself upon the ledge and glance up. The piece shines from the indent on your left side, but you&#x27;re still too low to grab it. You see holes in the cliff to the (link_goto: &quot;left&quot;, &quot;CliffFall&quot;) you can climb with and another ledge you can (link-goto: &quot;climb&quot;, &quot;ClimbUp&quot;) to further above you. You can see what appears to be small bones on the edge of one of the holes.\
-]</tw-passagedata><tw-passagedata pid="23" name="CliffWarning" tags="cliff" position="2527,918">You attempt to climb towards the left indent. You [grab]&lt;grab| the closest rock jutting from the cliff and begin pulling yourself up.
+]</tw-passagedata><tw-passagedata pid="23" name="CliffWarning" tags="cliff" position="947,966">You attempt to climb towards the left indent. You [grab]&lt;grab| the closest rock jutting from the cliff and begin pulling yourself up.
 (click: ?grab)[
 The rock crumbles under your weight, ridding your closest and safest route in this direction.
 Thankfully, you only stumbled back from the incident.
@@ -208,15 +210,15 @@ Thankfully, you only stumbled back from the incident.
 If this happens again further up the cliff, there would probably be more &#x27;&#x27;consequences&#x27;&#x27;.
 
 Go [[right-&gt;CliffClimbing]].
-]</tw-passagedata><tw-passagedata pid="24" name="build" tags="" position="1992,1208">You finished your radio.
-You start shifting to channels until you finally [[hear]] some chatter.</tw-passagedata><tw-passagedata pid="25" name="hear" tags="" position="1891,1335">&quot;Subject 2201 is still on the island. Over.&quot;
+]</tw-passagedata><tw-passagedata pid="24" name="build" tags="" position="412,1256">You finished your radio.
+You start shifting to channels until you finally [[hear]] some chatter.</tw-passagedata><tw-passagedata pid="25" name="hear" tags="" position="204.33333333333334,1701.3333333333335">&quot;Subject 2201 is still on the island. Over.&quot;
 &quot;He&#x27;s encountered the organism three times, according to camera feeds.&quot;
 &quot;Hey, it looks like he built something.&quot;
 &quot;That&#x27;s a radio, stupid! He can hear us!&quot;
 &quot;Everyone, go silent and continue monitoring both of the subjects.&quot;
 
-Suddenly, you hear a rustle from the [[lookAtJungle&lt;-jungle]].</tw-passagedata><tw-passagedata pid="26" name="ToBunker" tags="" position="2206,1406">You [[approach-&gt;BunkerEntrance]] the bunker to the east.</tw-passagedata><tw-passagedata pid="27" name="OpenCrate" tags="" position="2274,1280">Inside the crate you find a standard issue submachine gun (the same one you were trained to use) and a few magazines.
-        [[BunkerEntrance&lt;-Take the gun and ammo.]]</tw-passagedata><tw-passagedata pid="28" name="BunkerEntrance" tags="" position="2335,1407">You move down the stairs into the bunker, hoping to find some radio parts, or better yet, a working radio.
+Suddenly, you hear a rustle from the [[lookAtJungle&lt;-jungle]].</tw-passagedata><tw-passagedata pid="26" name="ToBunker" tags="" position="626,1454">You [[approach-&gt;BunkerEntrance]] the bunker to the east.</tw-passagedata><tw-passagedata pid="27" name="OpenCrate" tags="" position="694,1328">Inside the crate you find a standard issue submachine gun (the same one you were trained to use) and a few magazines.
+        [[BunkerEntrance&lt;-Take the gun and ammo.]]</tw-passagedata><tw-passagedata pid="28" name="BunkerEntrance" tags="" position="755,1455">You move down the stairs into the bunker, hoping to find some radio parts, or better yet, a working radio.
 
 You reach a heavy metal security door. Its got a lock with a T9 keyboard attached. It couldn&#x27;t hurt to guess a passcode.
 
@@ -227,11 +229,11 @@ You reach a heavy metal security door. Its got a lock with a T9 keyboard attache
         [[7-&gt;doorFalls]]	[[8-&gt;doorFalls]]	[[9-&gt;doorFalls]]
 		
 (set:$bodyArmor to false)
-(set:$hazmat to false)</tw-passagedata><tw-passagedata pid="29" name="doorFalls" tags="" position="2459,1408">Sparks fly out of the electronic door lock and the door falls forward, its hinges melted off of the side.
+(set:$hazmat to false)</tw-passagedata><tw-passagedata pid="29" name="doorFalls" tags="" position="879,1456">Sparks fly out of the electronic door lock and the door falls forward, its hinges melted off of the side.
         You [[BackUp&lt;-enter]] the room.
-</tw-passagedata><tw-passagedata pid="30" name="Forward" tags="" position="2720,1344">You see a long passage way with another room at the end. It looks like a command center with electronic equipment.
+</tw-passagedata><tw-passagedata pid="30" name="Forward" tags="" position="1140,1392">You see a long passage way with another room at the end. It looks like a command center with electronic equipment.
         [[Walk down the passage-&gt;downThePassage]]
-        [[Back Up-&gt;BackUp]]</tw-passagedata><tw-passagedata pid="31" name="Right" tags="" position="2716,1469">To your right is ventilation shaft with the doors removed. You slide a box under the entry so you can [peek]&lt;checkVent| inside.
+        [[Back Up-&gt;BackUp]]</tw-passagedata><tw-passagedata pid="31" name="Right" tags="" position="1136,1517">To your right is ventilation shaft with the doors removed. You slide a box under the entry so you can [peek]&lt;checkVent| inside.
 
         {
         (click: ?checkVent)[
@@ -244,20 +246,20 @@ You reach a heavy metal security door. Its got a lock with a T9 keyboard attache
         [[Back Up-&gt;BackUp]]
         ]
         }
-        </tw-passagedata><tw-passagedata pid="32" name="Left" tags="" position="2583,1559">To the left is a storage closet. Inside you find a security uniform with body armor and a hazmat suit.
+        </tw-passagedata><tw-passagedata pid="32" name="Left" tags="" position="1003,1607">To the left is a storage closet. Inside you find a security uniform with body armor and a hazmat suit.
         [[Take the hazmat suit-&gt;takeHazmat]]
-        [[Take the armor-&gt;takeArmor]]</tw-passagedata><tw-passagedata pid="33" name="BackUp" tags="" position="2578,1408">The stench of death hits you like a truck. Your breath gets heavy as you struggle to get any oxygen.
+        [[Take the armor-&gt;takeArmor]]</tw-passagedata><tw-passagedata pid="33" name="BackUp" tags="" position="998,1456">The stench of death hits you like a truck. Your breath gets heavy as you struggle to get any oxygen.
         [[Look Forward-&gt;Forward]]
         [[Look Right-&gt;Right]]
-        [[Look Left-&gt;Left]]</tw-passagedata><tw-passagedata pid="34" name="takeHazmat" tags="" position="2471,1676">You&#x27;re now wearing a hazmat suit.
+        [[Look Left-&gt;Left]]</tw-passagedata><tw-passagedata pid="34" name="takeHazmat" tags="" position="891,1724">You&#x27;re now wearing a hazmat suit.
 		(set: $hazmat to true)
-        [[BackUp&lt;-Back away from closet]]</tw-passagedata><tw-passagedata pid="35" name="takeArmor" tags="" position="2693,1669">You&#x27;re now wearing body armor
+        [[BackUp&lt;-Back away from closet]]</tw-passagedata><tw-passagedata pid="35" name="takeArmor" tags="" position="1113,1717">You&#x27;re now wearing body armor
         (set: $bodyArmor to true)
-        [[BackUp&lt;-Back away from closet]]</tw-passagedata><tw-passagedata pid="36" name="downThePassage" tags="" position="2855,1347">As you walk down the passage your foot gets tangled on a tight string. Based on your training you immediately know what&#x27;s going to happen [[next-&gt;bulletsFly]].</tw-passagedata><tw-passagedata pid="37" name="bulletsFly" tags="" position="2987,1344">The instant you hear the gunshots from the booby trap is the same instant you feel like you got hit by a truck. You&#x27;re pushed back by rounds coming from the rigged assault rifle.
+        [[BackUp&lt;-Back away from closet]]</tw-passagedata><tw-passagedata pid="36" name="downThePassage" tags="" position="1275,1395">As you walk down the passage your foot gets tangled on a tight string. Based on your training you immediately know what&#x27;s going to happen [[next-&gt;bulletsFly]].</tw-passagedata><tw-passagedata pid="37" name="bulletsFly" tags="" position="1407,1392">The instant you hear the gunshots from the booby trap is the same instant you feel like you got hit by a truck. You&#x27;re pushed back by rounds coming from the rigged assault rifle.
 (if: $bodyArmor is true)[Luckily, the body armor you picked up blocked the bullets. You continue down the hall knowing that whoever set that trap probably didn&#x27;t feel the need to set more. You reach the [[computer room-&gt;computerRoom]].]
-(if: $bodyArmor is false)[(text-style: &quot;blur&quot;)[You fall to your back and lie lifeless on the ground.] [[Try Again-&gt;BunkerEntrance]]]</tw-passagedata><tw-passagedata pid="38" name="ClimbVent" tags="" position="2914,1475">You slide into the vent shaft and your arm slips into the mysterious ooze.
+(if: $bodyArmor is false)[(text-style: &quot;blur&quot;)[You fall to your back and lie lifeless on the ground.] [[Try Again-&gt;BunkerEntrance]]]</tw-passagedata><tw-passagedata pid="38" name="ClimbVent" tags="" position="1334,1523">You slide into the vent shaft and your arm slips into the mysterious ooze.
 (if: $hazmat is true)[You scream in fear of what the liquid will do to you, until you realize the hazmat suit protected you. You continue to climb through the vent until you land in the [[computer room-&gt;computerRoom]]]
-(if: $hazmat is false)[Your arm suddenly feels like its on fire. You look down and see it explode with blisters. The pain immobilizes you and you eventually bleed out.[[try again-&gt;BunkerEntrance]]]</tw-passagedata><tw-passagedata pid="39" name="ToJungle" tags="jungle" position="2261,1114">{
+(if: $hazmat is false)[Your arm suddenly feels like its on fire. You look down and see it explode with blisters. The pain immobilizes you and you eventually bleed out.[[try again-&gt;BunkerEntrance]]]</tw-passagedata><tw-passagedata pid="39" name="ToJungle" tags="jungle" position="681,1162">{
 (set: $elapsedTime to 0)
 (set: $textAppeared to false)
 
@@ -280,10 +282,10 @@ Everything is quiet...
 ]
                 
 				
-				&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="40" name="Smoke" tags="jungle" position="2397,1103">You make it to the smoke.
+				&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="40" name="Smoke" tags="jungle" position="817,1151">You make it to the smoke.
 The source of the smoke seems to be from the middle section of the plane&#x27;s hull.
 
-[[monster behind&lt;-Investigate the area]].</tw-passagedata><tw-passagedata pid="41" name="monster behind" tags="jungle" position="2524,1106">Snap!
+[[monster behind&lt;-Investigate the area]].</tw-passagedata><tw-passagedata pid="41" name="monster behind" tags="jungle" position="944,1154">Snap!
 
                 Wait... You didn&#x27;t make that sound. \
 
@@ -333,11 +335,11 @@ The source of the smoke seems to be from the middle section of the plane&#x27;s 
                 [[$snap]&lt;snap|] \
 
                 [Turn around]&lt;turn|
-        </tw-passagedata><tw-passagedata pid="42" name="After monster" tags="jungle" position="2637,1102">Nothing is there.
+        </tw-passagedata><tw-passagedata pid="42" name="After monster" tags="jungle" position="1057,1150">Nothing is there.
 
 //Hmmm...//
 
-Well, back to checking out the [[area-&gt;Crashed Plane]].</tw-passagedata><tw-passagedata pid="43" name="Jungle Death" tags="jungle" position="2454,1225">{
+Well, back to checking out the [[area-&gt;Crashed Plane]].</tw-passagedata><tw-passagedata pid="43" name="Jungle Death" tags="jungle" position="874,1273">{
                 (set: $elapsedTime to 0)
                 }
                 (text-style:&quot;italic&quot;)[&#x27;&#x27;SHINK&#x27;&#x27;]
@@ -361,19 +363,19 @@ Well, back to checking out the [[area-&gt;Crashed Plane]].</tw-passagedata><tw-p
                 ]
                 ]
 				
-				&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="44" name="Crashed Plane" tags="jungle" position="2760,1101">{
+				&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="44" name="Crashed Plane" tags="jungle" position="1180,1149">{
                 (set: $setUpParachute to false)
                 (set: $hasParachute to false)
                 }
                 You&#x27;re at the broken part of the plane.
                 A tree of to the left of the hull has another plane part stuck way up high.
-                [[Move closer-&gt;Dish Discovery]] to get a better look.</tw-passagedata><tw-passagedata pid="45" name="Dish Discovery" tags="jungle" position="2877,1107">The part is a satellite dish.
+                [[Move closer-&gt;Dish Discovery]] to get a better look.</tw-passagedata><tw-passagedata pid="45" name="Dish Discovery" tags="jungle" position="1297,1155">The part is a satellite dish.
                 It could be useful in sending a signal.
                 The dish is loosely nestled on the side on a branch.
 
                 Next to your right leg is a [[rock-&gt;Picked Up Rock]].
                 Below the dish, are a group of [[tree branches-&gt;Investigate Branches]].
-				You kick something next to you. [[Corpse&lt;- You check to see what it is.]]</tw-passagedata><tw-passagedata pid="46" name="Corpse" tags="jungle" position="3007,1201">You check what you kicked. It&#x27;s a decaying human leg.
+				You kick something next to you. [[Corpse&lt;- You check to see what it is.]]</tw-passagedata><tw-passagedata pid="46" name="Corpse" tags="jungle" position="1427,1249">You check what you kicked. It&#x27;s a decaying human leg.
 
 You gaze up and see the owner of the leg. It&#x27;s a body of a dead man. There&#x27;s huge bite marks on his chest.
 
@@ -387,7 +389,7 @@ To his right, a [parachute]&lt;pickUpParachute| lays on the ground. It looks int
                 ]
                 }
 
-                [[Dish Discovery&lt;-Back]] to getting the dish!</tw-passagedata><tw-passagedata pid="47" name="Investigate Branches" tags="jungle" position="3001,1071">There are four branches spread out evenly underneath the dish.
+                [[Dish Discovery&lt;-Back]] to getting the dish!</tw-passagedata><tw-passagedata pid="47" name="Investigate Branches" tags="jungle" position="1421,1119">There are four branches spread out evenly underneath the dish.
                 //Hmm...//
 
                 {
@@ -401,7 +403,7 @@ To his right, a [parachute]&lt;pickUpParachute| lays on the ground. It looks int
                 ]
                 }
 
-                [[Back to dish.-&gt;Dish Discovery]]</tw-passagedata><tw-passagedata pid="48" name="Picked Up Rock" tags="jungle" position="2989,944">You picked up the rock!
+                [[Back to dish.-&gt;Dish Discovery]]</tw-passagedata><tw-passagedata pid="48" name="Picked Up Rock" tags="jungle" position="1409,992">You picked up the rock!
 
                 Throwing the rock may dislodge the satellite dish from the tree branch.
 
@@ -411,12 +413,12 @@ To his right, a [parachute]&lt;pickUpParachute| lays on the ground. It looks int
                 (click: ?threwRock)[
                 (if: $setUpParachute is true)[ (Goto: &quot;Jungle Success&quot;) ]
                 (else:) [ (Goto: &quot;Jungle Fail&quot;) ]
-                ]</tw-passagedata><tw-passagedata pid="49" name="Threw Rock" tags="jungle" position="3123,1117">(if: $setUpParachute is true)[ (Goto: &quot;Jungle Success&quot;) ]
-                (else:) [ (Goto: &quot;Jungle Fail&quot;) ]</tw-passagedata><tw-passagedata pid="50" name="Jungle Fail" tags="jugle" position="2598,1224">You failed!
+                ]</tw-passagedata><tw-passagedata pid="49" name="Threw Rock" tags="jungle" position="1543,1165">(if: $setUpParachute is true)[ (Goto: &quot;Jungle Success&quot;) ]
+                (else:) [ (Goto: &quot;Jungle Fail&quot;) ]</tw-passagedata><tw-passagedata pid="50" name="Jungle Fail" tags="jugle" position="1018,1272">You failed!
 
                 The satellite dish broke when it hit the ground.
 
-                Restart at [[checkpoint-&gt;Crashed Plane]].</tw-passagedata><tw-passagedata pid="51" name="Jungle Success" tags="jungle" position="3259,1088">{
+                Restart at [[checkpoint-&gt;Crashed Plane]].</tw-passagedata><tw-passagedata pid="51" name="Jungle Success" tags="jungle" position="1679,1136">{
                 (set: $hasDish to true)
                 }
                 Success!
@@ -425,18 +427,18 @@ To his right, a [parachute]&lt;pickUpParachute| lays on the ground. It looks int
                 You retrieved the dish and the parachute.
                 The satellite dish looks undamaged.
 
-                Time to head out of the [[jungle-&gt;IslandHub]]!  </tw-passagedata><tw-passagedata pid="52" name="computerRoom" tags="" position="3132,1412">You&#x27;ve made it to the computer room. Unfortunately all of the consoles are burned, slashed, or melted. Not only that, but the room is littered with dead bodies and bullet holes. The computers are unusable but in one of the drawers you [[find]]...</tw-passagedata><tw-passagedata pid="53" name="find" tags="" position="3266,1408">A fresh solar battery, perfect for your makeshift radio. With your new battery and nightmare fuel you go [[IslandHub&lt;-back to the beach.]]
-(set: $battery to true)</tw-passagedata><tw-passagedata pid="54" name="CliffFall" tags="cliff" position="2644,916">You pull yourself along the cliff when suddenly you feel a sharp pain in your left had. It feels like something bit you!
+                Time to head out of the [[jungle-&gt;IslandHub]]!  </tw-passagedata><tw-passagedata pid="52" name="computerRoom" tags="" position="1552,1460">You&#x27;ve made it to the computer room. Unfortunately all of the consoles are burned, slashed, or melted. Not only that, but the room is littered with dead bodies and bullet holes. The computers are unusable but in one of the drawers you [[find]]...</tw-passagedata><tw-passagedata pid="53" name="find" tags="" position="1686,1456">A fresh solar battery, perfect for your makeshift radio. With your new battery and nightmare fuel you go [[IslandHub&lt;-back to the beach.]]
+(set: $battery to true)</tw-passagedata><tw-passagedata pid="54" name="CliffFall" tags="cliff" position="1064,964">You pull yourself along the cliff when suddenly you feel a sharp pain in your left had. It feels like something bit you!
 
 The shock causes you to lose your grip on the cliff and you plummet to the ground below.
 
 The impact was (text-style:&quot;fade-in-out&quot;)[fatal.]
 \
-(link-goto: &quot;Restart from checkpoint&quot;, &quot;ArriveCliff&quot;)</tw-passagedata><tw-passagedata pid="55" name="ClimbUp" tags="cliff" position="2665,805">You pull yourself further up the cliff to the next ledge. You can now clearly see the radio piece to your left. It&#x27;s a Raspberry Pi Kit!
+(link-goto: &quot;Restart from checkpoint&quot;, &quot;ArriveCliff&quot;)</tw-passagedata><tw-passagedata pid="55" name="ClimbUp" tags="cliff" position="1085,853">You pull yourself further up the cliff to the next ledge. You can now clearly see the radio piece to your left. It&#x27;s a Raspberry Pi Kit!
 
 To your left, the cliff appears to create a narrow path to the ledge with the piece you can (link-goto: &quot;walk&quot;, &quot;CliffToPiece&quot;) across. 
 
-Above, the cliff appears to create a long, jutting ledge you can use to (link-goto: &quot;pull&quot;, &quot;CliffFall&quot;) yourself along the cliff without forcing yourself to balance on the path.</tw-passagedata><tw-passagedata pid="56" name="CliffToPiece" tags="cliff" position="2777,805">You shimmy along the narrow path. Your left foot slips off the side, but you safely jump to the ledge in time. 
+Above, the cliff appears to create a long, jutting ledge you can use to (link-goto: &quot;pull&quot;, &quot;CliffFall&quot;) yourself along the cliff without forcing yourself to balance on the path.</tw-passagedata><tw-passagedata pid="56" name="CliffToPiece" tags="cliff" position="1197,853">You shimmy along the narrow path. Your left foot slips off the side, but you safely jump to the ledge in time. 
 
 You grab the Raspberry Pi Kit. At this height, you notice you misjudged the effort it would take to reach the smokestack. You [climb]&lt;site| the rest of the way up the cliff to the top.
 
@@ -449,7 +451,24 @@ You probably shouldn&#x27;t stick around here too long, the owner could be nearb
 
 You make your way down the cliff using the same paths you took down (link-goto: &quot;and head back to the beach where you landed&quot;,&quot;IslandHub&quot;)
 (set: $hasRaspberryPi to true)
-]</tw-passagedata><tw-passagedata pid="57" name="lookAtJungle" tags="" position="2005,1401">A man pops out from the brush and extends his hand to you.
+]</tw-passagedata><tw-passagedata pid="57" name="lookAtJungle" tags="" position="200,1995.6666666666665">{
+(set: $elapsedTime to 0)
+(set: $textAppeared to false)
+}
+You start to turn your head towards the jungle...
+(live: 250ms)[
+	(if: $elapsedTime &gt; 1)[
+		(text-style: &quot;italic&quot;)[WHISHHH!!!]
+		
+		[[What the...!!!-&gt;LookAtAcidBurn]]
+	]
+	(else:)[
+		(set: $elapsedTime to (round: time / 500))
+	]
+]
+
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;
+&lt;!-- A man pops out from the brush and extends his hand to you.
 
 &quot;(text-style:&quot;bold&quot;)[Come with me if you want to live!]&quot;
 
@@ -460,11 +479,252 @@ You make your way down the cliff using the same paths you took down (link-goto: 
 
 
 
-(text-style: &quot;fade-in-out&quot;)[To be continued...]</tw-passagedata><tw-passagedata pid="58" name="TitleCard" tags="" position="1885,112">(css: &quot;font-size: 250%&quot;)[//Cast Off//]
+(text-style: &quot;fade-in-out&quot;)[To be continued...] --&gt;</tw-passagedata><tw-passagedata pid="58" name="TitleCard" tags="" position="305,160">(css: &quot;font-size: 250%&quot;)[//Cast Off//]
 
 A twine by Hudson Hughes, David Jamgochian, and Joanna Clark.
 
-(link-goto: &quot;Begin&quot;, &quot;Beginning&quot;)</tw-passagedata></tw-storydata>
+(link-goto: &quot;Begin&quot;, &quot;Beginning&quot;)</tw-passagedata><tw-passagedata pid="59" name="LookAtAcidBurn" tags="" position="313.66666666666663,2000.0000000000002">(text-style: &quot;italic&quot;) + (text-colour: &quot;red&quot;)[Sizzle!]
+
+The tree trunk in front of you has 
+a hole glowing (text-colour: &quot;red&quot;)[red hot] around the edges!
+
+Don&#x27;t have time! [[Find out where it came from!-&gt;LookBackAtJungle]]</tw-passagedata><tw-passagedata pid="60" name="LookBackAtJungle" tags="" position="500,1998.6666666666665">You swiftly turn around!
+
+[[OOOhhh no...-&gt;Dodge Monster]]</tw-passagedata><tw-passagedata pid="61" name="Dodge Monster" tags="jungle" position="694.3333333333334,2000.3333333333333">A (text-style:&quot;blur&quot;)+(text-colour:&quot;black&quot;)[black,blurred creature] lunges at you from high above!
+Its right arm is raised, ready to swipe at you!
+
+{
+(set: $closer to &quot;It&#x27;s getting closer!!!!!&quot;)
+(set: $alertStyle to (colour: red) + (text-style: &quot;bold&quot;))
+(set: $elapsedTime to 0)
+(set: $rolledRight to false)
+(set: $rolledLeft to false)
+
+(live: 1000ms)[
+	(if: $rolledRight is true)[
+		(stop:)
+		(goto: &quot;Run from Monster&quot;)
+	]
+	(else:)[
+		(set: $elapsedTime to (round: time / 1000))
+		(if: $elapsedTime &gt; 4 or $rolledLeft is true)[
+			(stop:)
+			(Goto: &quot;First Monster Death&quot;)
+		]
+
+		(if: $elapsedTime is 1)[
+			(set: $closer to &quot;It&#x27;s getting closer!!!!&quot;)
+		]
+		(if: $elapsedTime is 2)[
+			(set: $closer to &quot;It&#x27;s getting closer!!!&quot;)
+		]
+		(if: $elapsedTime is 3)[
+			(set: $closer to &quot;It&#x27;s getting closer!!&quot;)
+		]
+		(if: $elapsedTime is 4)[
+			(set: $closer to &quot;It&#x27;s getting closer!&quot;)
+		]
+		(replace: ?closer)[
+			$alertStyle[$closer]
+		]
+	]
+]
+				
+(click: ?rollRight)[
+	(set: $rolledRight to true)
+]
+(click: ?rollLeft)[
+	(set: $rolledLeft to true)
+]
+}
+[[$closer]&lt;closer|]
+
+[Roll to your left!]&lt;rollLeft|   |rollRight&gt;[Roll to your right!]
+
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="62" name="First Monster Death" tags="" position="694.6666666666665,1899">{
+(set: $elapsedTime to 0)
+}
+(if: $rolledLeft is false)[
+	The creature lands on and pins you to the ground!
+	Then,
+]
+(text-style:&quot;italic&quot;)[&#x27;&#x27;SLICE&#x27;&#x27;]
+
+Something is cutting into your nec-
+
+(text-style: &quot;blur&quot;)[Nothing...]\
+
+(live: 1000ms)[
+(if: $elapsedTime &gt; 2)[
+(text-style: &quot;blur&quot;)[Your head rolls away...]
+
+Restart at [[checkpoint-&gt;LookBackAtJungle]]\
+]
+(else:)[
+(set: $elapsedTime to (round: time / 1000))
+]
+]
+				
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="63" name="Run from Monster" tags="" position="809,1999.666666666667">(text-style:&quot;bold&quot;)[Phew!!!]
+
+Not dead yet!
+Oh wait! It&#x27;s turning to look at you!
+
+[[Run!!!-&gt;Dodge Monster&#x27;s Spit]]</tw-passagedata><tw-passagedata pid="64" name="Dodge Monster&#x27;s Spit" tags="" position="947.3333333333333,2004.3333333333335">{
+(set: $ducked to false)
+(set: $elapsedTime to 0)
+(set: $lowIntenseStyle to (text-style:&quot;blur&quot;) + (text-colour: &quot;green&quot;))
+(set: $highIntenseStyle to (text-style:&quot;italic&quot;) + (text-colour: &quot;green&quot;))
+(set: $glow to &quot;green........&quot;)
+}
+Running toward!...not sure, didn&#x27;t check.
+
+[&#x27;&#x27;Snap! Snap!&#x27;&#x27;]&lt;checkBehind|
+
+Uh oh, that sounds familiar!
+{
+(live: 1000ms)[
+	(set: $elapsedTime to (round: time / 1000))
+	(if: $elapsedTime &gt; 7)[
+		(if: $ducked is true)[
+			(stop:)
+			(goto: &quot;Ducked and Tripped&quot;)
+		]
+		(else:)[
+			(stop:)
+			(goto: &quot;Second Monster Death&quot;)
+		]	
+	]
+	(else:)[
+		(if: $elapsedTime is 1)[
+			(set: $glow to &quot;green.......&quot;)
+		]
+		(if: $elapsedTime is 2)[
+			(set: $glow to &quot;green......&quot;)
+		]
+		(if: $elapsedTime is 3)[
+			(set: $glow to &quot;green.....&quot;)
+		]
+		(if: $elapsedTime is 4)[
+			(set: $glow to &quot;green....&quot;)
+		]
+		(if: $elapsedTime is 5)[
+			(set: $glow to &quot;GREEN!!!&quot;)
+		]
+		(if: $elapsedTime is 6)[
+			(set: $glow to &quot;GREEN!!&quot;)
+		]
+		(if: $elapsedTime is 7)[
+			(set: $glow to &quot;GREEN!&quot;)
+		]
+		
+		(if: $elapsedTime &lt;= 4)[
+			(replace: ?glow)[ 
+				$lowIntenseStyle[$glow] 
+			]
+		]
+		(if: $elapsedTime &gt; 4)[
+			(replace: ?glow)[ 
+				$highIntenseStyle[$glow] 
+			]
+		]
+	]
+]
+}
+Wait, something is glowing [[$glow]&lt;glow|]
+
+(click: ?checkBehind)[
+	The creature is closing on you!
+	It launched another wad of that green acid!
+	
+	[Duck!]&lt;duck|
+]
+
+(click: ?duck)[
+	(set: $ducked to true)
+]
+
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="65" name="Second Monster Death" tags="" position="1089.6666666666665,1890.3333333333335">{
+(set: $elapsedTime to 0)
+}
+(text-style:&quot;blur&quot;)+(text-colour:&quot;red&quot;)[&#x27;&#x27;BURN!!!&#x27;&#x27;]
+
+(text-style: &quot;blur&quot;)[Nothing...]\
+
+(live: 1000ms)[
+(if: $elapsedTime &gt; 2)[
+(text-style: &quot;blur&quot;)[The bottom half of your body collapses on the ground...]
+
+Restart at [[checkpoint-&gt;Run from Monster]]\
+]
+(else:)[
+(set: $elapsedTime to (round: time / 1000))
+]
+]
+				
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="66" name="Ducked and Tripped" tags="" position="1090.6666666666665,2001.0000000000002">The acid missed you!
+
+(text-style:&quot;italic&quot;)[Thud!]
+
+You tripped over something while ducking and hit the ground face first!
+
+[[//Need to get up!//-&gt;Monster Closing In]]
+
+&lt;!--[(text-style:&quot;italic&quot;)[Need to get up!]&lt;getUp|
+
+(click: ?getUp)
+--&gt;</tw-passagedata><tw-passagedata pid="67" name="Monster Closing In" tags="" position="1236.3333333333335,2003.0000000000002">While getting up, you see the creature only 5 yards away from you.
+
+It&#x27;s lunging at you. There&#x27;s not enough time to get away.
+
+[[Close your eyes, and wait for the end.-&gt;Encounter Friend]]</tw-passagedata><tw-passagedata pid="68" name="Encounter Friend" tags="" position="1390.3333333333335,2003">{
+(set: $elapsedTime to 0)
+}
+Darkness...
+
+{
+(live: 1000ms)[
+	(if: $elapsedTime &gt; 2)[
+		Thud!
+		 
+		What!? You&#x27;re not dead yet?
+		 
+		[Open your eyes.]&lt;open|
+	]
+	(else:)[
+		(set: $elapsedTime to (round: time / 1000))
+	]
+]
+}
+(click: ?open)[
+	The monster is screeching on the ground.
+	To your right, a man holding a crossbow pops out from the brush and extends his hand to you.
+
+&quot;(text-style:&quot;bold&quot;)[Come with me if you want to live!]&quot;
+
+[[Grab his hand!-&gt;Running Towards Cliff]]
+]</tw-passagedata><tw-passagedata pid="69" name="Running Towards Cliff" tags="" position="1545,1997.0000000000002">The man pulls you up till you&#x27;re standing. 
+He starts running. 
+You follow him.
+
+Behind you, the creature is starting to get back up!
+Ahead of you, the man is running towards the [[cliff-&gt;Jump Off Cliff]].</tw-passagedata><tw-passagedata pid="70" name="Jump Off Cliff" tags="" position="1687,2000.3333333333335">Made it to the cliff!
+It&#x27;s a 3-story drop to the water!
+The man dives off the cliff!
+The creature is lunging at you (text-style:&quot;bold&quot;)[NOW!]
+
+[[&#x27;&#x27;JUMP!&#x27;&#x27;-&gt;In The Water]]</tw-passagedata><tw-passagedata pid="71" name="In The Water" tags="" position="1857,1998.3333333333335">//(text-colour:&quot;blue&quot;)[SPPLASHHH!!!]//
+
+You dove perfectly into the ocean!
+Back on the edge of the cliff, the creature stands and seems to be screeching in your direction.
+But...it&#x27;s not following you. 
+//hmm...//
+
+Ahead of you, the man swims towards an undersea [[Cave]].</tw-passagedata><tw-passagedata pid="72" name="Cave" tags="" position="1990,2006.3333333333335">Now in the cave, the man starts swimming up towards what seems to be an [air pocket]&lt;enterPrivateBunker|.
+(click: ?enterPrivateBunker)[
+	Reaching the surface of the air pocket, you realize this is a dock for another bunker!
+	The man is climbing up a ladder up to land.
+]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
