@@ -77,7 +77,9 @@ body {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -751,8 +753,52 @@ But...it&#x27;s not following you.
 Ahead of you, the man swims towards an undersea [[Cave]].</tw-passagedata><tw-passagedata pid="72" name="Cave" tags="" position="1990,2006">Now in the cave, the man starts swimming up towards what seems to be an [air pocket]&lt;enterPrivateBunker|.
 (click: ?enterPrivateBunker)[
 	Reaching the surface of the air pocket, you realize this is a dock for another bunker!
-	The man is climbing up a ladder up to land.
-]</tw-passagedata></tw-storydata>
+	The man is climbing up a [[ladder-&gt;Standing on Dock]] up to land.
+]</tw-passagedata><tw-passagedata pid="73" name="Standing on Dock" tags="" position="196.66666666666652,2203.333333333333">You&#x27;re standing on the dock.
+
+&quot;(text-style:&quot;bold&quot;)[C&#x27;mon, I&#x27;ll show you around]&quot;
+
+The man opens a rusted metal door and walks through the [[doorway-&gt;Exposition]].</tw-passagedata><tw-passagedata pid="74" name="Exposition" tags="" position="396,2203">Exposition. Will be filled in later.
+May take up more than 1 text box!
+Go to [[next passage-&gt;FriendSeesYourRadio]].</tw-passagedata><tw-passagedata pid="75" name="FriendSeesYourRadio" tags="" position="566,2201">The man realizes you have a radio.
+
+&quot;(text-style:&quot;bold&quot;)[Hey! you have a radio! We can call for help!]&quot;
+
+[[Call for help again-&gt;CallHelpAgain]], or
+[[tell him about your last attempt-&gt;SayRadioWontHelp]].</tw-passagedata><tw-passagedata pid="76" name="CallHelpAgain" tags="" position="744,2152">&quot;We still have no visual on Subject 2201.&quot;
+
+The man turns off the radio.
+
+&quot;(text-style:&quot;bold&quot;)[Crap! No one will help us!]&quot;
+
+Hmm... [[time to think of another solution-&gt;New Plan Unfolds]].
+
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="77" name="SayRadioWontHelp" tags="" position="740,2281">(text-style:&quot;bold&quot;)[You already tried calling for help? Well, I&#x27;m out of ideas]&quot;
+
+Hmm... [[time to think of another solution-&gt;New Plan Unfolds]].
+
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="78" name="New Plan Unfolds" tags="" position="900,2222">The man further inspects your radio.
+
+&quot;(text-style:&quot;bold&quot;)[Hold on! We may not have to call for help!]&quot;
+&quot;(text-style:&quot;bold&quot;)[Listening to these people may allow us to gather intel on them.]&quot;
+
+You also start to realize you can hack into the government boat&#x27;s weapons.
+[[Fill your friend in on your idea.-&gt;GatherIntel]]
+
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="79" name="GatherIntel" tags="" position="1043,2223">&quot;Stuff. Stuff. Stuff.&quot; &lt;!-- Fill more details later! Info on boat&#x27;s weapons need to be revealed in some way. --&gt;
+
+The man turns to look at you.
+
+&quot;(text-style:&quot;bold&quot;)[Well, that was interesting. You finished hacking into their ship&#x27;s systems. We now need a way to deal with the creature.]&quot;
+
+Looking around, no weapons nearby will be enough to kill the creature.
+But what about the ship?
+The boat&#x27;s missiles apparently have enough firepower to the creature.
+Missing story info. Add more later!
+
+[[LureCreature]]
+
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="80" name="LureCreature" tags="" position="1180,2231">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="81" name="KillCreatureWithMissles" tags="" position="1303,2230">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
