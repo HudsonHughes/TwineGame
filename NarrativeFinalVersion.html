@@ -85,7 +85,9 @@ body {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -707,11 +709,11 @@ You tripped over something while ducking and hit the ground face first!
 &lt;!--[(text-style:&quot;italic&quot;)[Need to get up!]&lt;getUp|
 
 (click: ?getUp)
---&gt;</tw-passagedata><tw-passagedata pid="67" name="Monster Closing In" tags="" position="1236,2003">While getting up, you see the creature only 5 yards away from you.
+--&gt;</tw-passagedata><tw-passagedata pid="67" name="Monster Closing In" tags="" position="1234,2001">While getting up, you see the creature only 5 yards away from you.
 
 It&#x27;s lunging at you. There&#x27;s not enough time to get away.
 
-[[Close your eyes, and wait for the end.-&gt;Encounter Friend]]</tw-passagedata><tw-passagedata pid="68" name="Encounter Friend" tags="" position="1390,2003">{
+[[Close your eyes, and wait for the end.-&gt;Encounter Friend]]</tw-passagedata><tw-passagedata pid="68" name="Encounter Friend" tags="" position="1384,2000">{
 (set: $elapsedTime to 0)
 }
 Darkness...
@@ -737,48 +739,41 @@ Darkness...
 &quot;(text-style:&quot;bold&quot;)[Come with me if you want to live!]&quot;
 
 [[Grab his hand!-&gt;Running Towards Cliff]]
-]</tw-passagedata><tw-passagedata pid="69" name="Running Towards Cliff" tags="" position="1545,1997">The man pulls you up till you&#x27;re standing. 
+]</tw-passagedata><tw-passagedata pid="69" name="Running Towards Cliff" tags="" position="1519,2000">The man pulls you up till you&#x27;re standing. 
 He starts running. 
 You follow him.
 
 Behind you, the creature is starting to get back up!
-Ahead of you, the man is running towards the [[cliff-&gt;Jump Off Cliff]].</tw-passagedata><tw-passagedata pid="70" name="Jump Off Cliff" tags="" position="1687,2000">Made it to the cliff!
+Ahead of you, the man is running into the [[jungle-&gt;Running in Jungle]].</tw-passagedata><tw-passagedata pid="70" name="Jump Off Cliff" tags="" position="1772,2001">Made it to the cliff!
 It&#x27;s a 3-story drop to the water!
 The man dives off the cliff!
 The creature is lunging at you (text-style:&quot;bold&quot;)[NOW!]
 
-[[&#x27;&#x27;JUMP!&#x27;&#x27;-&gt;In The Water]]</tw-passagedata><tw-passagedata pid="71" name="In The Water" tags="" position="1857,1998">//(text-colour:&quot;blue&quot;)[SPPLASHHH!!!]//
+[[&#x27;&#x27;JUMP!&#x27;&#x27;-&gt;In The Water]]</tw-passagedata><tw-passagedata pid="71" name="In The Water" tags="" position="1900,2000">//(text-colour:&quot;blue&quot;)[SPPLASHHH!!!]//
 
 You dove perfectly into the ocean!
 Back on the edge of the cliff, the creature stands and seems to be screeching in your direction.
 But...it&#x27;s not following you. 
 //hmm...//
 
-Ahead of you, the man swims towards an undersea [[Cave]].</tw-passagedata><tw-passagedata pid="72" name="Cave" tags="" position="1990,2006">Now in the cave, the man starts swimming up towards what seems to be an [air pocket]&lt;enterPrivateBunker|.
+Ahead of you, the man swims towards an undersea [[Cave]].</tw-passagedata><tw-passagedata pid="72" name="Cave" tags="" position="2023,2000">Now in the cave, the man starts swimming up towards what seems to be an [air pocket]&lt;enterPrivateBunker|.
 (click: ?enterPrivateBunker)[
 	Reaching the surface of the air pocket, you realize this is a dock for another bunker!
 	The man is climbing up a [[ladder-&gt;Standing on Dock]] up to land.
-]</tw-passagedata><tw-passagedata pid="73" name="Standing on Dock" tags="" position="196,2203">You&#x27;re standing on the dock.
+]</tw-passagedata><tw-passagedata pid="73" name="Standing on Dock" tags="" position="0,2201">You&#x27;re standing on the dock.
 
 &quot;(text-style:&quot;bold&quot;)[C&#x27;mon, I&#x27;ll show you around]&quot;
 
-The man opens a rusted metal door and walks through the [[doorway-&gt;Exposition]].</tw-passagedata><tw-passagedata pid="74" name="Exposition" tags="" position="396,2203">Exposition. Will be filled in later. 
-NOT FINISHED YET!
-May take up more than 1 text box!
+The man opens a rusted metal door and walks through the [[doorway-&gt;Exposition]].</tw-passagedata><tw-passagedata pid="74" name="Exposition" tags="" position="200,2201">&quot;WHAT IS GOING ON. WHAT WAS THAT. WHAT IS THIS PLACE!!!&quot;
 
-Any text boxes starting from the part 2 beginning are in rough draft form, so feel free to change text you don&#x27;t like.
-I left comment messages near the end of most of the part 2 text boxes saying they are a rough draft, so please remove them when you are done, or let me know to get rid of them before turning the game in.
+&quot;I know. I know. Just let me explain. Pull up a chair.&quot;
 
-Details that need to be included/hinted in some way, (or not, depending on if you want to change what&#x27;s currently here):
-1. The friend&#x27;s name is Hudson.
-2. The boat&#x27;s missiles might not be able to completely destroy the bunker from part 1.
-3. Maybe info about creature&#x27;s camo not working correctly with constantly changing environment (see &quot;ChoseCampsite&quot; branch)
-Go to [[next passage-&gt;FriendSeesYourRadio]].</tw-passagedata><tw-passagedata pid="75" name="FriendSeesYourRadio" tags="" position="566,2201">The man realizes you have a radio.
+[[next-&gt;Exposition2]]</tw-passagedata><tw-passagedata pid="75" name="FriendSeesYourRadio" tags="" position="663,2178">The man realizes you have a radio.
 
 &quot;(text-style:&quot;bold&quot;)[Hey! you have a radio! We can call for help!]&quot;
 
 [[Call for help again-&gt;CallHelpAgain]], or
-[[tell him about your last attempt-&gt;SayRadioWontHelp]].</tw-passagedata><tw-passagedata pid="76" name="CallHelpAgain" tags="" position="744,2152">&quot;REMINDER: maintain radio silence.&quot;
+[[tell him about your last attempt-&gt;SayRadioWontHelp]].</tw-passagedata><tw-passagedata pid="76" name="CallHelpAgain" tags="" position="1101,2111">&quot;REMINDER: maintain radio silence.&quot;
 
 The man turns off the radio.
 
@@ -786,11 +781,11 @@ The man turns off the radio.
 
 Hmm... [[time to think of another solution-&gt;New Plan Unfolds]].
 
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="77" name="SayRadioWontHelp" tags="" position="740,2281">(text-style:&quot;bold&quot;)[You already tried calling for help? Well, I&#x27;m out of ideas]&quot;
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="77" name="SayRadioWontHelp" tags="" position="1097,2351">(text-style:&quot;bold&quot;)[You already tried calling for help? Well, I&#x27;m out of ideas]&quot;
 
 Hmm... [[time to think of another solution-&gt;New Plan Unfolds]].
 
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="78" name="New Plan Unfolds" tags="" position="900,2222">The man further inspects your radio.
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="78" name="New Plan Unfolds" tags="" position="1257,2234">The man further inspects your radio.
 
 &quot;(text-style:&quot;bold&quot;)[Hold on! We may not have to call for help!]&quot;
 &quot;(text-style:&quot;bold&quot;)[Listening to these people may allow us to gather intel on them.]&quot;
@@ -798,7 +793,7 @@ Hmm... [[time to think of another solution-&gt;New Plan Unfolds]].
 You also start to realize you can hack into the government boat&#x27;s weapons.
 [[Fill your friend in on your idea.-&gt;GatherIntel]]
 
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="79" name="GatherIntel" tags="" position="1043,2221">&quot;Stuff. Stuff. Stuff.&quot; &lt;!-- Fill more details later! Info on boat&#x27;s weapons need to be revealed in some way. --&gt;
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="79" name="GatherIntel" tags="" position="1400,2233">&quot;Stuff. Stuff. Stuff.&quot; &lt;!-- Fill more details later! Info on boat&#x27;s weapons need to be revealed in some way. --&gt;
 
 The man turns to look at you.
 
@@ -812,7 +807,7 @@ MISSING STORY INFO. ADD MORE DETAILS LATER!
 
 [[TrapCreatureSetup]]
 
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="80" name="TrapCreatureSetup" tags="" position="187,2576">12 hours have passed.
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="80" name="TrapCreatureSetup" tags="" position="188,2576">12 hours have passed.
 
 The plan is to lure the creature into a position where Hudson can call in a missle strike via the hacked boat comms.
 
@@ -822,7 +817,7 @@ Feeling a little annoyed: (text-style:&quot;italic&quot;)[Hudson made up the pla
 
 (text-style:&quot;italic&quot;)[Oh well... Ate enough food and feel rested.]
 
-Time to [[set up the trap-&gt;ChooseTrapLocation]].</tw-passagedata><tw-passagedata pid="81" name="KillCreatureWithMissiles" tags="" position="1000.6666666666666,2580">Phew! The brick fireplace protected you!
+Time to [[set up the trap-&gt;ChooseTrapLocation]].</tw-passagedata><tw-passagedata pid="81" name="KillCreatureWithMissiles" tags="" position="1396,2592">Phew! The brick fireplace protected you!
 But it won&#x27;t hold for long!
 
 Get to the edge of the cliff and [[call in the missile strike!-&gt;GetAwayFromMissile]]
@@ -831,14 +826,14 @@ Get to the edge of the cliff and [[call in the missile strike!-&gt;GetAwayFromMi
 (text-style:&quot;italic&quot;)[Ok, where to lure the creature?]
 The [[jungle-&gt;ChoseJungle]]?
 The [[ambandoned campsite-&gt;ChoseCampsite]] on the cliff?
-Or, the first [[bunker-&gt;ChoseBunker]] you discovered?</tw-passagedata><tw-passagedata pid="83" name="ChoseJungle" tags="jungle" position="574,2412">Back in the jungle.
+Or, the first [[bunker-&gt;ChoseBunker]] you discovered?</tw-passagedata><tw-passagedata pid="83" name="ChoseJungle" tags="jungle" position="1002,2355">Back in the jungle.
 Smoke is no longer rising from the area you found the satellite dish.
 (text-style:&quot;italic&quot;)[Hmm, still no sound...]
 
 Set up the trap at the [[crashed plane-&gt;RiggedJungleEncounter]], perhaps?
 [[Head back-&gt;ChooseTrapLocation]] to where you started.
 
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="84" name="RiggedJungleEncounter" tags="jungle" position="727,2418">Snap!
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="84" name="RiggedJungleEncounter" tags="jungle" position="1132,2464">Snap!
 
                 Wait... You didn&#x27;t make that sound. 
 				Uh oh, you know that sound.
@@ -889,7 +884,7 @@ Set up the trap at the [[crashed plane-&gt;RiggedJungleEncounter]], perhaps?
                 }
                 [[$snap]&lt;snap|] \
 
-                [Call in strike!]&lt;call|</tw-passagedata><tw-passagedata pid="85" name="Second Jungle Death" tags="jungle" position="872,2411">About to hit the transmit button, and!...
+                [Call in strike!]&lt;call|</tw-passagedata><tw-passagedata pid="85" name="Second Jungle Death" tags="jungle" position="1262,2423">About to hit the transmit button, and!...
 
 {
 (set: $elapsedTime to 0)
@@ -953,19 +948,19 @@ Then...
 	]
 ]
 
-&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="90" name="ChoseCampsite" tags="" position="603,2579">You are now at the abandoned campsite at the top of the cliff.
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="90" name="ChoseCampsite" tags="" position="1002,2591">You are now at the abandoned campsite at the top of the cliff.
 The brick campfire is out.
 The area seems to be clear.
 
 [[Wait-&gt;Distortion]] for the creature at the campfire.
-[[Head back-&gt;ChooseTrapLocation]] to where you started.</tw-passagedata><tw-passagedata pid="91" name="Distortion" tags="" position="725,2579">3 hours so far, and nothing...
+[[Head back-&gt;ChooseTrapLocation]] to where you started.</tw-passagedata><tw-passagedata pid="91" name="Distortion" tags="" position="1132,2704">3 hours so far, and nothing...
 
 Starring off into the distance, all you can see is the heat rising off from the ground.
 (text-style:&quot;italic&quot;)[Yawnn, so tired... Closing my eyes...]
 
 
 (text-style:&quot;italic&quot;)[Wait], what&#x27;s that unusual distortion in the heat waves?
-[[Focus-&gt;TakeCover]] on the distortion.</tw-passagedata><tw-passagedata pid="92" name="TakeCover" tags="" position="872,2577">It looks like a figure...
+[[Focus-&gt;TakeCover]] on the distortion.</tw-passagedata><tw-passagedata pid="92" name="TakeCover" tags="" position="1156,2589">It looks like a figure...
 
 Hold on! That&#x27;s the creature! Its camouflage can&#x27;t keep up with the heat waves.
 
@@ -1019,7 +1014,7 @@ Uh oh, it&#x27;s spitting wads of acid at you!
 
 [Dodge to your left!]&lt;rollLeft|   |rollRight&gt;[Take cover behind the fireplace!]
 
-&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="93" name="Campsite Death" tags="" position="1002,2465">Got out of the way!
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="93" name="Campsite Death" tags="" position="1392,2477">Got out of the way!
 
 Oh wait! The creature adjusted its aim while you were dodging!
 
@@ -1040,11 +1035,11 @@ Restart at [[checkpoint-&gt;ChoseCampsite]]\
 ]
 ]
 &lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;				
-&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="94" name="GetAwayFromMissile" tags="" position="1124,2574">The missile is flying towards you off in the distance.
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="94" name="GetAwayFromMissile" tags="" position="1526,2586">The missile is flying towards you off in the distance.
 The creature is right behind you!
 
 Quick! [[Jump off the cliff!-&gt;CreatureDeathSuccess]] It&#x27;s your only chance!
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="95" name="CreatureDeathSuccess" tags="" position="1266,2574">You just jumped off the edge!
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="95" name="CreatureDeathSuccess" tags="" position="1656,2586">You just jumped off the edge!
 The missile is about to hit, and...
 
 (text-style: &quot;bold&quot;)[BOOM!]
@@ -1132,7 +1127,7 @@ The boat slows and approaches the shore.
 Five four-man squads of men with assult rifles jump off the boat and swim to the beach.
 
 Now is your chance!
-[[Swim-&gt;CreaturesKillingSoldiers]] to the boat while the crew is away!</tw-passagedata><tw-passagedata pid="103" name="CreaturesKillingSoldiers" tags="" position="997,3022.5">{ 
+[[Swim-&gt;CreaturesKillingSoldiers]] to the boat while the crew is away!</tw-passagedata><tw-passagedata pid="103" name="CreaturesKillingSoldiers" tags="" position="997,3022">{ 
 (set: $elapsedTime to 0) 
 }
 The soldiers swam to the beach faster than expected!
@@ -1180,7 +1175,46 @@ No hurrahs. No celebrations.
 
 You look at Hudson. One look at his face says he&#x27;s thinking the same thing:
 
-The island might just the tip of the iceberg...</tw-passagedata></tw-storydata>
+The island might just the tip of the iceberg...</tw-passagedata><tw-passagedata pid="107" name="Running in Jungle" tags="" position="1652,2002">You continue running with your new friend. Ahead through the bushed you see the monster again, fully healed, he starts barreling towards the two of you.
+
+{
+(live: 1000ms)[
+	(if: $elapsedTime &gt; 2)[
+	
+		&#x27;It can heal fast?!&#x27;
+		
+	]
+	(if: $elapsedTime &gt; 4)[
+		&lt;br&gt;
+		&#x27;Yes they can&quot; the other guy says.&#x27;
+		 &lt;br&gt;
+		[[You keep following the man to the cliff. -&gt;Jump Off Cliff]]
+	]
+	(else:)[
+		(set: $elapsedTime to (round: time / 1000))
+	]
+]
+}</tw-passagedata><tw-passagedata pid="108" name="Exposition2" tags="" position="330,2202">You take a seat on the couch and notice how nice the bunker is.
+
+So, eight years ago the government noticed a ton of seismic shifts on this island, which is especially unusual since we are no where near a faultline.
+
+A passing military ship was ordered to land on the island to look for anything weird. They found a giant hole in the ground. Everyone they sent down never came back up, so they built a bunker around it to monitor it. 
+
+Soon after, that thing emerged. The security detail and scientist were no match for it.
+
+&quot;How do you know all this?&quot;
+
+[[next-&gt;Exposition3]]</tw-passagedata><tw-passagedata pid="109" name="Exposition3" tags="" position="444,2199">&quot;I was one of the people in charge of the operation&quot;
+
+&quot;My first thought was to bomb the hole in the ground. But where I felt fear General Bard saw opportunity. He wanted to study the creature more so he puts it up against the best the military has to offer.&quot;
+
+&quot;So he planned the crash?&quot;
+
+&quot;You&#x27;re not the first. That&#x27;d be me. I was going to blow the whistle on Bard so he figured what better way to silence me than to let the creatures take care me. Luckily he forgot about this particular bunker at the time.&quot;
+
+&quot;How long have you been here&quot;
+
+&quot;I lost track of time but it must have been 7 or 8 hunting seasons.&quot;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
