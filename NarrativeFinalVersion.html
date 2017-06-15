@@ -82,7 +82,13 @@ body {
 
 
 
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
 
 
 
@@ -489,7 +495,7 @@ You probably shouldn&#x27;t stick around here too long, the owner could be nearb
 
 You make your way down the cliff using the same paths you took down (link-goto: &quot;and head back to the beach where you landed&quot;,&quot;IslandHub&quot;)
 (set: $hasRaspberryPi to true)
-]</tw-passagedata><tw-passagedata pid="57" name="lookAtJungle" tags="" position="200,1995">{
+]</tw-passagedata><tw-passagedata pid="57" name="lookAtJungle" tags="jungle" position="200,1996">{
 (set: $elapsedTime to 0)
 (set: $textAppeared to false)
 }
@@ -505,28 +511,18 @@ You start to turn your head towards the jungle...
 	]
 ]
 
-&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;
-&lt;!-- A man pops out from the brush and extends his hand to you.
-
-&quot;(text-style:&quot;bold&quot;)[Come with me if you want to live!]&quot;
-
-
-
-
-
-
-
-
-(text-style: &quot;fade-in-out&quot;)[To be continued...] --&gt;</tw-passagedata><tw-passagedata pid="58" name="TitleCard" tags="" position="305,160">(css: &quot;font-size: 250%&quot;)[//Cast Off//]
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="58" name="TitleCard" tags="" position="305,160">(css: &quot;font-size: 250%&quot;)[//Cast Off//]
 
 A twine by Hudson Hughes, David Jamgochian, and Joanna Clark.
 
-(link-goto: &quot;Begin&quot;, &quot;Beginning&quot;)</tw-passagedata><tw-passagedata pid="59" name="LookAtAcidBurn" tags="" position="313,2000">(text-style: &quot;italic&quot;) + (text-colour: &quot;red&quot;)[Sizzle!]
+(link-goto: &quot;Begin&quot;, &quot;Beginning&quot;)
+
+(link-goto: &quot;Continue at Part 2&quot;, &quot;build&quot;)</tw-passagedata><tw-passagedata pid="59" name="LookAtAcidBurn" tags="" position="313,2000">(text-style: &quot;italic&quot;) + (text-colour: &quot;red&quot;)[Sizzle!]
 
 The tree trunk in front of you has 
 a hole glowing (text-colour: &quot;red&quot;)[red hot] around the edges!
 
-Don&#x27;t have time! [[Find out where it came from!-&gt;LookBackAtJungle]]</tw-passagedata><tw-passagedata pid="60" name="LookBackAtJungle" tags="" position="500,1998">You swiftly turn around!
+Don&#x27;t have time! [[Find out where it came from!-&gt;LookBackAtJungle]]</tw-passagedata><tw-passagedata pid="60" name="LookBackAtJungle" tags="jungle" position="500,1998">You swiftly turn around!
 
 [[OOOhhh no...-&gt;Dodge Monster]]</tw-passagedata><tw-passagedata pid="61" name="Dodge Monster" tags="jungle" position="694,2000">A (text-style:&quot;blur&quot;)+(text-colour:&quot;black&quot;)[black,blurred creature] lunges at you from high above!
 Its right arm is raised, ready to swipe at you!
@@ -766,15 +762,23 @@ Ahead of you, the man swims towards an undersea [[Cave]].</tw-passagedata><tw-pa
 
 &quot;(text-style:&quot;bold&quot;)[C&#x27;mon, I&#x27;ll show you around]&quot;
 
-The man opens a rusted metal door and walks through the [[doorway-&gt;Exposition]].</tw-passagedata><tw-passagedata pid="74" name="Exposition" tags="" position="396,2203">Exposition. Will be filled in later.
+The man opens a rusted metal door and walks through the [[doorway-&gt;Exposition]].</tw-passagedata><tw-passagedata pid="74" name="Exposition" tags="" position="396,2203">Exposition. Will be filled in later. 
+NOT FINISHED YET!
 May take up more than 1 text box!
-The friend&#x27;s name is Hudson.
+
+Any text boxes starting from the part 2 beginning are in rough draft form, so feel free to change text you don&#x27;t like.
+I left comment messages near the end of most of the part 2 text boxes saying they are a rough draft, so please remove them when you are done, or let me know to get rid of them before turning the game in.
+
+Details that need to be included/hinted in some way, (or not, depending on if you want to change what&#x27;s currently here):
+1. The friend&#x27;s name is Hudson.
+2. The boat&#x27;s missiles might not be able to completely destroy the bunker from part 1.
+3. Maybe info about creature&#x27;s camo not working correctly with constantly changing environment (see &quot;ChoseCampsite&quot; branch)
 Go to [[next passage-&gt;FriendSeesYourRadio]].</tw-passagedata><tw-passagedata pid="75" name="FriendSeesYourRadio" tags="" position="566,2201">The man realizes you have a radio.
 
 &quot;(text-style:&quot;bold&quot;)[Hey! you have a radio! We can call for help!]&quot;
 
 [[Call for help again-&gt;CallHelpAgain]], or
-[[tell him about your last attempt-&gt;SayRadioWontHelp]].</tw-passagedata><tw-passagedata pid="76" name="CallHelpAgain" tags="" position="744,2152">&quot;We still have no visual on Subject 2201.&quot;
+[[tell him about your last attempt-&gt;SayRadioWontHelp]].</tw-passagedata><tw-passagedata pid="76" name="CallHelpAgain" tags="" position="744,2152">&quot;REMINDER: maintain radio silence.&quot;
 
 The man turns off the radio.
 
@@ -814,12 +818,11 @@ The plan is to lure the creature into a position where Hudson can call in a miss
 
 You are now back on the main island.
 
-Feeling a little annoyed: (text-style:&quot;italic:&quot;)[Hudson made up the plan and knows how to avoid the creature, but he didn&#x27;t hack into the comms. Shouldn&#x27;t he be luring the creature instead of calling in the strike?!]
+Feeling a little annoyed: (text-style:&quot;italic&quot;)[Hudson made up the plan and knows how to avoid the creature, but he didn&#x27;t hack into the comms. Shouldn&#x27;t he be luring the creature instead of calling in the strike?!]
 
-(text-style:&quot;italic&quot;)[Oh well... Ate enough food and feel rested
+(text-style:&quot;italic&quot;)[Oh well... Ate enough food and feel rested.]
 
-Time to [[set up the trap-&gt;ChooseTrapLocation]].
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="81" name="KillCreatureWithMissles" tags="" position="999.6666666666666,2580.6666666666665">Phew! The brick fireplace protected you!
+Time to [[set up the trap-&gt;ChooseTrapLocation]].</tw-passagedata><tw-passagedata pid="81" name="KillCreatureWithMissiles" tags="" position="1000.6666666666666,2580">Phew! The brick fireplace protected you!
 But it won&#x27;t hold for long!
 
 Get to the edge of the cliff and [[call in the missile strike!-&gt;GetAwayFromMissile]]
@@ -828,8 +831,7 @@ Get to the edge of the cliff and [[call in the missile strike!-&gt;GetAwayFromMi
 (text-style:&quot;italic&quot;)[Ok, where to lure the creature?]
 The [[jungle-&gt;ChoseJungle]]?
 The [[ambandoned campsite-&gt;ChoseCampsite]] on the cliff?
-Or, the first [[bunker-&gt;ChoseBunker]] you discovered?
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="83" name="ChoseJungle" tags="jungle" position="574,2412">Back in the jungle.
+Or, the first [[bunker-&gt;ChoseBunker]] you discovered?</tw-passagedata><tw-passagedata pid="83" name="ChoseJungle" tags="jungle" position="574,2412">Back in the jungle.
 Smoke is no longer rising from the area you found the satellite dish.
 (text-style:&quot;italic&quot;)[Hmm, still no sound...]
 
@@ -909,22 +911,22 @@ Restart at [[checkpoint-&gt;ChoseJungle]]\
 ]
 ]
 				
-&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="86" name="ChoseBunker" tags="" position="598,2741">Back at the bunker.
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="86" name="ChoseBunker" tags="bunker-door" position="503,2714">Back at the bunker.
 
 Head through the [[door-&gt;SetupRifleTrap]] with the broken keypad.
-[[Head back-&gt;ChooseTrapLocation]] to where you started.</tw-passagedata><tw-passagedata pid="87" name="SetupRifleTrap" tags="" position="742,2743">Only the rigged assult rifle can stun the creature long enough to get out of the bunker in time before the missile hits.
+[[Head back-&gt;ChooseTrapLocation]] to where you started.</tw-passagedata><tw-passagedata pid="87" name="SetupRifleTrap" tags="bunker-door" position="677,2728">Only the rigged assult rifle can stun the creature long enough to get out of the bunker in time before the missile hits.
 
 30 minutes later, the trap is setup.
 
 Now, just need to [[wait...-&gt;BunkerEncounter]]
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="88" name="BunkerEncounter" tags="" position="869,2732">Nothing so far...
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="88" name="BunkerEncounter" tags="bunker-door" position="834,2727">Nothing so far...
 
 BOOM! BOOM BOOM! BOOM! ...
 
 The creature triggered the assult rifle trap, and seemed to be stunned!
 
 [[Call in the missile strike-&gt;RiggedBunkerDeath]] and GET OUT!
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="89" name="RiggedBunkerDeath" tags="" position="1010,2729">{
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="89" name="RiggedBunkerDeath" tags="bunker-door" position="988,2720">{
 (set: $elapsedTime to 0)
 }
 Phew! Made it out! 
@@ -953,21 +955,17 @@ Then...
 
 &lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="90" name="ChoseCampsite" tags="" position="603,2579">You are now at the abandoned campsite at the top of the cliff.
 The brick campfire is out.
-
 The area seems to be clear.
 
 [[Wait-&gt;Distortion]] for the creature at the campfire.
-[[Head back-&gt;ChooseTrapLocation]] to where you started.
-
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="91" name="Distortion" tags="" position="725,2579">3 hours so far, and nothing...
+[[Head back-&gt;ChooseTrapLocation]] to where you started.</tw-passagedata><tw-passagedata pid="91" name="Distortion" tags="" position="725,2579">3 hours so far, and nothing...
 
 Starring off into the distance, all you can see is the heat rising off from the ground.
 (text-style:&quot;italic&quot;)[Yawnn, so tired... Closing my eyes...]
 
 
-Wait, what&#x27;s that unusual distortion in the heat waves.
-[[Focus-&gt;TakeCover]] on the distortion.
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="92" name="TakeCover" tags="" position="872,2577">It looks like a figure...
+(text-style:&quot;italic&quot;)[Wait], what&#x27;s that unusual distortion in the heat waves?
+[[Focus-&gt;TakeCover]] on the distortion.</tw-passagedata><tw-passagedata pid="92" name="TakeCover" tags="" position="872,2577">It looks like a figure...
 
 Hold on! That&#x27;s the creature! Its camouflage can&#x27;t keep up with the heat waves.
 
@@ -1021,13 +1019,13 @@ Uh oh, it&#x27;s spitting wads of acid at you!
 
 [Dodge to your left!]&lt;rollLeft|   |rollRight&gt;[Take cover behind the fireplace!]
 
-&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="93" name="Campsite Death" tags="" position="1002.3333333333334,2465.666666666667">Got out of the way!
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="93" name="Campsite Death" tags="" position="1002,2465">Got out of the way!
 
 Oh wait! The creature adjusted its aim while you were dodging!
 
 Uh oh...
 {
-(set: $elapsedTime to 1)
+(set: $elapsedTime to 0)
 }
 (live: 1000ms)[
 (if: $elapsedTime &gt; 1)[
@@ -1041,14 +1039,12 @@ Restart at [[checkpoint-&gt;ChoseCampsite]]\
 (set: $elapsedTime to (round: time / 1000))
 ]
 ]
-				
-&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;
-
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="94" name="GetAwayFromMissile" tags="" position="1124.6666666666665,2574.3333333333335">The missile is flying towards you off in the distance.
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;				
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="94" name="GetAwayFromMissile" tags="" position="1124,2574">The missile is flying towards you off in the distance.
 The creature is right behind you!
 
 Quick! [[Jump off the cliff!-&gt;CreatureDeathSuccess]] It&#x27;s your only chance!
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="95" name="CreatureDeathSuccess" tags="" position="1266.6666666666667,2574.3333333333335">You just jumped off the edge!
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="95" name="CreatureDeathSuccess" tags="" position="1266,2574">You just jumped off the edge!
 The missile is about to hit, and...
 
 (text-style: &quot;bold&quot;)[BOOM!]
@@ -1056,8 +1052,135 @@ The missile is about to hit, and...
 The missile hit the creature!
 The blast sent you flying into the ocean!
 And, somehow, you miraculously survived!
+That doesn&#x27;t make any sense! Only action heroes are ok after being flung by an explosion like that!
+But, still alive, so can&#x27;t complain too much.
 
-&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata></tw-storydata>
+Swim to the [[small, secluded beach-&gt;CommChatter]] near you.
+
+&lt;!-- Text is in rough draft form. Feel free to change text as you like --&gt;</tw-passagedata><tw-passagedata pid="96" name="CommChatter" tags="" position="182,2921">Now on the beach, out of the water, and standing on brown, coarse sand.
+Suddenly, you hear chatter over the radio:
+
+&quot;Missile fired! Repeat! Missile fired!&quot;
+&quot;The organism is dead!&quot;
+&quot;Confirm the kill on the target, Subject 2201!&quot;
+
+This is what you&#x27;ve been waiting for!
+Time to [[start-&gt;ChooseResponse]] the next phase of the plan.</tw-passagedata><tw-passagedata pid="97" name="ChooseResponse" tags="" position="350,2926">{
+(set: $choseWrong to false)
+(set: $choseRight to false)
+}
+You and Hudson need to get control of and escape on the government boat.
+How to respond to the radio chatter?
+
+1. [&quot;Shadow Squad to command: Subject 2201 confirmed dead.&quot;]&lt;wrong|
+2. [&quot;Hey idiots, you missed! Come and get me!&quot;]&lt;right|
+
+(click: ?wrong)[
+	(set: $choseWrong to true)
+	(set: $choseRight to false)
+	(goto: &quot;WrongResponse&quot;)
+]
+(click: ?right)[
+	(set: $choseRight to true)
+	(set: $choseWrong to false)
+	(goto: &quot;CorrectResponse&quot;)
+]</tw-passagedata><tw-passagedata pid="98" name="WrongResponse" tags="" position="501,2866">Boat: &quot;Copy Shadow Squad. Go to the extraction point on the beach for pick up.&quot;
+
+Ok, time to meet up with Hudson and [[go-&gt;GoToBeach]] to the beach.</tw-passagedata><tw-passagedata pid="99" name="CorrectResponse" tags="" position="500,3000">Boat: no response.
+
+Well, time to see what they do. Your training taught you that the beach would be the most likely area for the boat to stage an assult.
+
+Time to meet up with Hudson and [[go-&gt;GoToBeach]] to the beach.</tw-passagedata><tw-passagedata pid="100" name="GoToBeach" tags="" position="696,2936">You are crouched behind a bush on the edge of the jungle while overlooking the entire beach.
+
+(text-style:&quot;italic&quot;)[&quot;Has the boat shown up yet?&quot;]
+
+You look to your right. Hudson is kneeling beside you.
+A few seconds later, you hear a loud motor and look towards the water.
+The boat is approaching the beach.
+
+[Time to put the rest of the plan into action.]&lt;enactPlan|
+
+(click: ?enactPlan)[
+	(if: $choseWrong is true)[ (goto: &quot;Final Death (Bad Ending)&quot;) ]
+	(if: $choseRight is true)[ (goto:&quot;SoldiersLeaveBoat&quot;) ]
+]</tw-passagedata><tw-passagedata pid="101" name="Final Death (Bad Ending)" tags="" position="842,2870">You and Hudson are now standing on the beach, awaiting the boat to come pick you two up.
+
+Wait... The boat stopped approaching, but it&#x27;s not close enough to shore to pick you up.
+
+(text-style:&quot;blur&quot;)+(text-colour:&quot;red&quot;)[&#x27;&#x27;WHHIISSHHH!!!&#x27;&#x27;]
+
+Another missile is a second away from you and Hudson!
+{
+(set: $elapsedTime to 0)
+}
+(live: 1000ms)[ (if: $elapsedTime &gt; 1)[
+		(text-style:&quot;blur&quot;)+(text-colour:&quot;red&quot;)[&#x27;&#x27;KABOOM!!!&#x27;&#x27;]
+		
+		(text-style:&quot;blur&quot;)+(text-colour:&quot;red&quot;)[&#x27;&#x27;BURN!!!&#x27;&#x27;]
+		
+		A brief moment of pain, then,
+		
+		(text-style: &quot;blur&quot;)[Nothing...]\
+	]
+	(else:)[
+		(set: $elapsedTime to (round: time / 1000))
+	]
+]
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="102" name="SoldiersLeaveBoat" tags="" position="834,3021">You and Hudson now take cover behind a boulder on the beach, 30 yards to the right of your last position.
+
+The boat slows and approaches the shore.
+Five four-man squads of men with assult rifles jump off the boat and swim to the beach.
+
+Now is your chance!
+[[Swim-&gt;CreaturesKillingSoldiers]] to the boat while the crew is away!</tw-passagedata><tw-passagedata pid="103" name="CreaturesKillingSoldiers" tags="" position="997,3022.5">{ 
+(set: $elapsedTime to 0) 
+}
+The soldiers swam to the beach faster than expected!
+You didn&#x27;t have time to make it to the water!
+One of the soldiers is heading towards your hiding spot!
+(live: 1000ms)[ (if: $elapsedTime &gt; 1)[
+		(text-style:&quot;blur&quot;)[&#x27;&#x27;Rustle! Rustle!&#x27;&#x27;]
+		
+		Wait, the sound came from the woods.
+		The soldier, who also heard the sound, decides to investigate the 			disturbance.
+	] (if: $elapsedTime &gt; 2)[
+		(text-style:&quot;blur&quot;)+(text-colour:&quot;red&quot;)[&#x27;&#x27;AAAGGGHHH!!!&#x27;&#x27;]
+		
+		The rest of the soldiers hear the scream and head into the woods.
+		
+		(text-style:&quot;blur&quot;)+(text-colour:&quot;red&quot;)[&#x27;&#x27;AAAGGGHHH!!!&#x27;&#x27;]
+		
+		[[Look-&gt;MultipleCreatures]] into the forest.\
+	]
+	(set: $elapsedTime to (round: time / 1000))
+]
+&lt;!-- Reference: the code used for the timer is modified from the &quot;Twine 2.0: Changer and Sensor Macros&quot; video by Dan Cox; https://www.youtube.com/watch?v=paDQr05yhkY&amp;index=4&amp;list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d --&gt;</tw-passagedata><tw-passagedata pid="104" name="MultipleCreatures" tags="" position="1135,3022">Wads of acid are flying everywhere!
+Soldiers bodies are dropping every second!
+
+Up in the trees, an unknown number of creatures jumping between branches
+and firing on the soldiers!
+
+You have a second chance!
+[[Swim-&gt;GotToBoat]] to the boat before the creatures see you or Hudson!</tw-passagedata><tw-passagedata pid="105" name="GotToBoat" tags="" position="1276,3025">Both you and Hudson reach the boat!
+
+(text-style:&quot;blur&quot;)[[Climb]&lt;ladder| up the ladder quietly.
+]
+(click: ?ladder)[ 
+	Now onboard the boat.
+	&#x27;&#x27;[Knock out]&lt;driverGone| the driver and throw him overboard!&#x27;&#x27;
+]
+(click: ?driverGone)[
+	The boat is clear! You and Hudson are unharmed!
+	
+	(text-style:&quot;bold&quot;)+(text-colour:&quot;yellow&quot;)[It&#x27;s finally time release the boat&#x27;s anchor 
+	and [[sail away-&gt;The End]] from the island!]
+]</tw-passagedata><tw-passagedata pid="106" name="The End" tags="" position="1411,3023">The island disappears off into the distance.
+
+No hurrahs. No celebrations.
+
+You look at Hudson. One look at his face says he&#x27;s thinking the same thing:
+
+The island might just the tip of the iceberg...</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
